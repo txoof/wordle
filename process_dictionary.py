@@ -89,8 +89,8 @@ with open(word_file, 'r') as f:
 
 # sort dictionary by word length
 new_d = {}
-for k in sorted(all_words_dict, key=len, reverse=False):
-    new_d[k] = all_words_dict[k]
+for k in sorted(all_words, key=len, reverse=False):
+    new_d[k] = all_words[k]
 
 
 
@@ -238,11 +238,6 @@ for file in csv_files:
         writer.writeheader()
         writer.writerows(file['var'])
     
-
-
-
-
-
 
 
 
